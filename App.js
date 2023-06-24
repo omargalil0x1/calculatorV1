@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useState } from "react";
 
 const buttonTextSize = 60;
-const buttonSize = 80;
+const buttonSize = "16%";
 
 const row1 = 1;
 
@@ -175,7 +175,7 @@ export default function App() {
 							bottom: row4 + 91,
 							left : 15, 
 							right: 20,
-							width: "68%"
+							width: "65%"
 						}
 					]
 				}
@@ -184,7 +184,7 @@ export default function App() {
 				</TouchableOpacity>
 
 				<TouchableOpacity 
-					style={[styles.buttonStyle, {bottom: row4 + 91, right: 20}]}
+					style={[styles.buttonStyle, {bottom: row4 + 91, right: 20, height: "6.5%"}]}
 					onPress={() => {
 						changeText(textNumber.substring(0, textNumber.length - 1));
 					} 
@@ -203,11 +203,15 @@ const styles = StyleSheet.create({
 
 	numberText: { position: "absolute", left: 0, fontWeight: "light", fontSize: 60, color: "black", fontFamily: "sans-serif"},
 
-	buttonView: { flex: 1, width: "100%"},
+	buttonView: { flex: 1, width: "100%", alignItems: "center", justifyContent: "center", 
+		marginBottom: "10%", 
+		marginTop: "auto", 
+		marginRight: "10%", 
+		marginLeft: "10%"},
 
 	buttonStyle: { alignItems: "center", borderColor: "rgba(255, 255, 255, 0.2)",
 	borderStyle: "solid", borderWidth: 1, borderRadius: 5, position: "absolute", width: buttonSize,
-	height: buttonSize },
+	height: "8%", marginTop: "auto", marginBottom: "7%" },
 
 	buttonTextStyle: { color: "white", fontSize: buttonTextSize, fontFamily: "sans-serif"},
 });

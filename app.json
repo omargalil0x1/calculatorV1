@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.omargalil0x1.calculatorv1"
     },
     "web": {
       "favicon": "./assets/favicon.png"
